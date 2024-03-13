@@ -1,27 +1,28 @@
- *{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
- }
- body{
+}
+
+body {
     width: 100%;
     min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     background: linear-gradient(to top right, #317c7c 0%, #814394 100%);
- }
- .container{
+}
+
+.container {
     max-width: 600px;
     background: #fff;
     border-radius: 5px;
     width: 600px;
     padding: 20px;
-    box-shadow: 0 2px 2px 3px rgba(0,0,0,0.1)
+    box-shadow: 0 2px 2px 3px rgba(0,0,0,0.1);
 }
-.wrap
-{
+
+.wrap {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -30,29 +31,52 @@
     padding-bottom: 15px;
     border-bottom: 2px solid #e26218;
 }
-.add
-{
-   text-decoration: none;
-   display: inline-block;
-   width: 30px;
-   height: 30px;
-   background: #8bc34a;
-   font-size: 2rem;
-   font-weight: bold;
-   color: #fff;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-}
-.flex
-{
+
+.add {
+    text-decoration: none;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background: #8bc34a;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
     display: flex;
-    gap: 1.5em;
-    margin-bottom: 15px;
-    
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px; /* Added border radius */
 }
-.delete
-{
+
+.question {
+    position: relative;
+    margin-bottom: 20px;
+    padding: 10px; /* Added padding */
+    background-color: #ddd; /* Added background color */
+    border-radius: 5px; /* Added border radius */
+}
+
+.plus-wrapper {
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.plus-sign {
+    display: block;
+    width: 100%;
+    height: 100%;
+    line-height: 30px; /* Adjust line-height for vertical alignment */
+    text-align: center; /* Center the plus sign horizontally */
+    background: #8bc34a;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    border-radius: 50%; /* Oval shape */
+    cursor: pointer;
+}
+
+.delete {
     text-decoration: none;
     display: inline-block;
     background: #f44336;
@@ -67,17 +91,26 @@
     align-items: center;
     cursor: pointer;
 }
-input{
+
+.options {
+    margin-top: 10px;
+}
+
+.option {
+    margin-bottom: 5px;
+    padding: 10px; /* Added padding */
+    background-color: #ddd; /* Added background color */
+    border-radius: 5px; /* Added border radius */
+}
+
+input {
     padding: 5px;
     background: #ddd;
     border: none;
-    width: 50%;
+    width: calc(100% - 40px); /* Adjusted width to accommodate buttons */
     border-radius: 5px;
 }
-input:focus{
+
+input:focus {
     outline: 1px solid #efefef;
-}
-.inp-group
-{
-    margin-bottom: 20px;
 }
